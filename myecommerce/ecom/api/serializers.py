@@ -7,4 +7,8 @@ class CouponSerializer(serializers.Serializer):
     discount= serializers.ImageField()
     active = serializers.BooleanField()
 
+class ProductSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Product
+        fields ='__all__'
     
